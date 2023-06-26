@@ -1,16 +1,19 @@
 import '../App.css';
 
-const Todo = ({todoInfo, removeTodo , children, changeState}) => {
-    return (
-      <div className="todo-style"> 
-        <h1>{todoInfo.title}</h1>
-        <span>{todoInfo.content}</span>
-        <br />
-        <div>
-          <button onClick={() => removeTodo(todoInfo.id)}>삭제하기</button>
-          <button onClick={() => changeState(todoInfo)}>{children}</button>
-        </div>
+const Todo = ({item, removeTodo, changeTodoState, children}) => {
+  return (
+    <div className="todo_div">
+      <h1>{item.title}</h1>
+      <div>{item.content}</div>
+      <br />
+      <div className="todo_button">
+        {console.log(item.id, item)
+        }
+        <button className="delete_button" onClick={() => removeTodo(item.id)}>삭제하기</button>
+        <button className="complete_button" onClick={() => changeTodoState(item)}>{children}</button>
       </div>
-    )
-  };
-  export default Todo
+    </div>
+  )
+};
+
+export default Todo
