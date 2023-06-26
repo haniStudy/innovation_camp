@@ -18,6 +18,9 @@ function App() {
   const addTodo = () => {
     const newWork = {id: todo.length + 1, title, content, state: false}
     setTodo([...todo, newWork]);
+
+    setTitle("");
+    setContent("");
   };
 
   // 할 일 제거 함수
