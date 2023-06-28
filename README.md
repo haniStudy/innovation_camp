@@ -1,2 +1,2 @@
-# innovation_camp
-innovation_camp
+# 이노베이션 캠프 과제 제출
+이노베이션 캠프 과제 제출 깃허브입니다.

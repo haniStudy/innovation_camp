@@ -1,67 +1,91 @@
-header {
+.todo_box{
+  max-width: 1200px;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+.todo_header{
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  margin: 20px 20px 20px 20px;
+  padding: 0 20px;
+  height: 50px;
+  border: 1px solid #ddd;
 }
 
-nav {
-  height: 100px;
+.todo_nav{
+  border-radius: 12px;
+  padding: 30px;
+  background-color: #eee;
+}
 
-  font-size: 20px;
-  font-weight: bold;
-
+.todo_nav_div{
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: rgb(223, 220, 220);
+  gap: 20px;
 }
-nav > input {
-  width: 200px;
-  height: 30px;
-  margin: 20px 20px 20px 15px;
-  font-size: 20px;
-}
-nav > button {
+
+.todo_nav_div > label {
+  display: block;
   font-size: 16px;
-  font-weight: bold;
-  width: 100px;
-  height: 40px;
-  color: white;
-  background-color: black;
+  font-weight: 700;
+}
+
+.todo_nav_div > input {
   border: none;
-  border-radius: 5px;
+  border-radius: 12px;
+  height: 40px;
+  width: 240px;
+  padding: 0 12px;
 }
 
-.todo-style {
-  font-weight: bold;
-
-  width: 250px;
-  height: 150px;
-  border: 3px solid rgb(223, 220, 220);
-  border-radius: 10px;
-  margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px;
-
-  display: inline-block;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
+.todo_nav_div > button {
+  background-color: teal;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    height: 40px;
+    width: 140px;
 }
 
-.todo-style > h1, span {
+.main {
+  padding: 0 24px;
+}
+
+ .main_top {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+ }
+
+.main_middle{
+    border: 4px solid teal;
+    border-radius: 12px;
+    padding: 12px 24px 24px;
+    width: 270px;
 }
 
-.todo-style > div > button{
-  background-color: rgb(223, 220, 220);
-  border: 1px solid rgba(128, 126, 126, 0.788);
-  border-radius: 5px;
-
-  width: 100px;
-  height: 30px;
-  margin: 10px;
+.main_middle_btn {
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
 }
+
+ .main_middle_btn > button{
+  border-radius: 8px;
+  cursor: pointer;
+  height: 40px;
+  width: 50%;
+ }
+
+ .remove_btn {
+  background-color: #fff;
+  border: 2px solid red;
+ }
+
+ .done_btn {
+  background-color: #fff;
+  border: 2px solid green;
+
+ }
