@@ -5,7 +5,7 @@ import Article from './components/Article';
 import Nav from './components/Nav';
 
 function App() {
-    const [todo, setTodo] = useState('');        // 할 일
+    const [todo, setTodo] = useState([]);        // 할 일
     const [id, setId] = useState(1);             // id
     const [title, setTitle] = useState('');      // 제목
     const [content, setContent] = useState('');  // 내용
@@ -14,8 +14,8 @@ function App() {
     const contentHandler = (e) => {setContent(e.target.value)};
 
     const addTodo = () => { // 새로운 할 일 추가
-        if (title.length === 0 || content.length === 0) {
-            alert('모든 항목을 입력해주세요');
+        if(title.length === 0 || content.length === 0) {
+            alert("모든 항목을 입력해주세요");
             return false;
         }
 
