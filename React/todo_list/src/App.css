@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .todo_box{
   max-width: 1200px;
   min-width: 800px;
@@ -89,3 +90,112 @@
   border: 2px solid green;
 
  }
+=======
+.header_div {
+  max-width: 1200px;
+  min-width: 800px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > div {
+  margin-left: 20px;
+}
+
+.nav_top {
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #eee;
+}
+
+.nav_label {
+  font-size: 16px;
+  font-weight: 700;
+  cursor: default;
+}
+
+.nav_middle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav_middle > input {
+  border: none;
+  border-radius: 12px;
+  height: 40px;
+  width: 240px;
+  padding: 0 12px;
+}
+
+.nav_middle > button {
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700;
+  height: 40px;
+  width: 140px;
+  background-color: teal;
+}
+
+.article_top {
+  display: block;
+  padding: 0 24px;
+}
+
+.article_middle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.todo_div {
+  border: 4px solid teal;
+  border-radius: 12px;
+  padding: 10px 24px 24px;
+  width: 270px;
+}
+
+.todo_div > h1, p {
+  display: block;
+  font-size: 1.5em;
+}
+
+.todo_button {
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.todo_button > button {
+  width: 70%;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.delete_button {
+  background-color: #fff;
+  border: 2px solid red;
+}
+
+.complete_button {
+  background-color: #fff;
+  border: 2px solid green;
+}
+>>>>>>> origin
